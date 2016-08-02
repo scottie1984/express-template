@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "description": "A simple express template",
   "scripts": {
-  	"start": "npm run build && node ./bin/www",
-    "build": "npm run hint",
-    "hint": "./node_modules/.bin/jshint src/* && ./node_modules/.bin/jshint test/*",
-    "test": "./node_modules/.bin/mocha"
+  	"start": "NODE_ENV=development supervisor -e 'html|js' node bin/www",
+    "build": "npm run hint && npm test",
+    "hint": "./node_modules/.bin/jshint src/**/*.js && ./node_modules/.bin/jshint test/**/*.js",
+    "test": "./node_modules/.bin/mocha test/*"
   },
   "dependencies": {
     "ramda": "0.17.1",
@@ -17,11 +17,12 @@
 	"cookie-parser": "1.0.1",
 	"body-parser": "1.0.2",
 	"ejs": "0.8.8",
-	"q": "1.2.0",
 	"debug": "2.1.2",
 	"moment": "2.9.0",
 	"reload": "0.1.0",
-	"superagent": "*"
+	"superagent": "*",
+	"swagger-express-router": "1.0.0",
+	"swagger-ui-express": "1.0.0"
   },
   "devDependencies": {
     "mocha": "2.2.5",

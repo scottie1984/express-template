@@ -1,5 +1,5 @@
 var assert = require('assert');
-var propertyPicker = require('../src/controllers/property-picker');
+var propertyPicker = require('../../src/property-picker');
 
 describe('propertyPicker', function() {
 	it('pickBar', function() {

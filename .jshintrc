@@ -1,4 +1,5 @@
 {
   "node": true,
-  "quotmark": "single"
+  "quotmark": "single",
+  "esnext": true
 }
