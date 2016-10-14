@@ -22,7 +22,7 @@
 	"reload": "0.1.0",
 	"superagent": "*",
 	"swagger-express-router": "1.0.0",
-	"swagger-ui-express": "1.0.0"
+	"swagger-ui-express": "1.0.1"
   },
   "devDependencies": {
     "mocha": "2.2.5",
